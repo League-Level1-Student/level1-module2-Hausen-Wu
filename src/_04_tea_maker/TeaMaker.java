@@ -59,7 +59,7 @@ class Cup {
 	void makeTea(TeaBag teabag, Kettle.Water hotWater) {
 		this.teabag = teabag;
 		if (hotWater.isHot())
-			System.out.println("Making hot " + teabag.getFlavor() + " tea.");
+			System.out.println("Making hot " + this.teabag.getFlavor() + " tea.");
 		else
 			System.out.println("Can't make tea with cold water! ");
 	}

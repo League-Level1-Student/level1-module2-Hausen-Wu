@@ -33,31 +33,77 @@ This is because there is no Minion class in the package.
     
  */
 
+
+
 public class MinionTest {
 
-/*	@Test
+	@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
-		assertEquals("Stuart", stuart.getName());
-		assertEquals(1, stuart.getEyes());
-		assertEquals("yellow", stuart.getColor());
+			assertEquals("Stuart", stuart.getName());
+				assertEquals(1, stuart.getEyes());
+					assertEquals("yellow", stuart.getColor());
 
 		Minion dave = new Minion("Dave", 2, "yellow", "");
-		assertEquals("Dave", dave.getName());
-		assertEquals(2, dave.getEyes());
-		assertEquals("yellow", dave.getColor());
+			assertEquals("Dave", dave.getName());
+				assertEquals(2, dave.getEyes());
+					assertEquals("yellow", dave.getColor());
 	}
 
 	@Test
 	public void testSetters() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
 
-		stuart.setMaster("T. Rex");
-		assertEquals("T. Rex", stuart.getMaster());
+			stuart.setMaster("T. Rex");
+				assertEquals("T. Rex", stuart.getMaster());
+	
+			stuart.setMaster("Napoleon");
+				assertEquals("Napoleon", stuart.getMaster());
+	}
+	
+	class Minion
+	{
+		private String name; 
+			private int eyes; 
+				private String color; 
+					private String master;
+		
+		Minion(String name,int eyes,String color,String master)
+		{
+			
+			this.name=name;
+				this.eyes=eyes;
+					this.color=color;
+						this.master=master;
+			
+		}
+		
+			void setMaster(String master)
+				{
+					this.master=master;
+				}
+			
+			String getName()
+				{
+					return name;
+				}
+			
+			int getEyes()
+				{
+					return eyes;
+				}
+			
+			String getMaster()
+				{
+					return master;
+				}
+			
+			String getColor()
+				{
+					return color;
+				}
 
-		stuart.setMaster("Napoleon");
-		assertEquals("Napoleon", stuart.getMaster());
-	}*/
+	}
 
 }
 
